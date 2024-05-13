@@ -1,4 +1,4 @@
- package ru.netology.services.rascetotpuska;
+package ru.netology.services.rascetotpuska;
 
 public class VacationCalculation {
     public int calculate(int income, int expenses, int threshold) {
@@ -7,7 +7,7 @@ public class VacationCalculation {
         for (int month = 0; month < 12; month++) {
             if (money >= threshold) { // можем ли отдыхать?
                 count++; // увеличиваем счётчик месяцев отдыха
-                money = (money - expenses)/3;
+                money = (money - expenses) / 3;
             } else {
                 money = money + income - expenses;
             }
